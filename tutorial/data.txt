@@ -1,0 +1,15 @@
+1. Introduction to Go
+The bufio package implements buffered I/O.
+It wraps an io.Reader or io.Writer object.
+
+2. Performance Benefits
+- Reduces system calls.
+- Uses a default buffer size (usually 4096 bytes).
+- Great for reading large logs.
+
+3. Sample Data Points
+100, 200, 300, 400
+500, 600, 700, 800
+
+4. End of File
+This is the last line of our experiment.
