@@ -45,8 +45,10 @@ func TestDoMathTable(t *testing.T) {
 		{"addition", 2, 2, "+", 4, ""},
 		{"subtraction", 2, 2, "-", 0, ""},
 		{"multiplication", 2, 2, "*", 4, ""},
+		{"another_mult", 2, 3, "*", 6, ""},
 		{"division", 2, 2, "/", 1, ""},
 		{"bad_division", 2, 0, "/", 0, `division by zero`},
+		{"bad_op", 2, 2, "?", 0, `unknown operator ?`},
 	}
 	for _, d := range data {
 		t.Run(d.name, func(t *testing.T) {
